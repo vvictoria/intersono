@@ -1,0 +1,235 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+.header {
+    margin: 16px 0;
+    &__contacts {
+        &__net {
+            color: @main-blue;
+            margin: 6px 0;
+        }
+        &__phones {
+            margin: 6px 0;
+        }
+    }
+    &__sign-up_lang {
+        margin: 6px 0;
+
+        .dropdown {
+            margin: 6px 0;
+            display: inline-block;
+        }
+
+        .navbar-toggle {
+            margin: 0;
+            padding: 6px;
+            font-size: 24px;
+            color: @main-blue;
+        }
+    }
+    i.fa {
+        color: @icon-color;
+    }
+    .icon {
+        width: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+    button {
+        font-weight: bold;
+    }
+    font-size: 16px;
+}
+.menu {
+    background-color: @main-blue;
+
+    .dropdown .caret {
+        color: #FFF;
+    }
+
+    .search-button {
+        color: #DDD;
+    }
+}
+.path {
+    background-image: url('../images/path.jpg');
+    .bg-image-add;
+    height: 250px;
+    .jumbotron {
+        position: relative;
+    }
+    &__breadcrumbs__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.content {
+    margin-top: 40px;
+
+    &__sidebar {
+        ul.nav > li {
+            border-bottom: 1px solid @soft-color;
+        }
+    }
+    &__article {
+        margin-bottom: 30px;
+    }
+    &__contact-us {
+        padding: 16px;
+        background-color: @main-blue-lighter;
+        h1 {
+            color: @main-blue;
+        }
+        input.form-control, .dropdown {
+            margin-bottom: 8px;
+        }
+    }
+    &__banner {
+        background-color: #A8B9C6;
+        height: 180px;
+        color: #FFF;
+        margin-top: 32px;
+        line-height: 180px;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__left-part .nav {
+        font-weight: bold;
+    }
+    .article__text h2 {
+        color: @main-blue;
+    }
+
+    .carousel-indicators {
+        li {
+            border: 1px solid @main-blue;
+        }
+        .active {
+            background-color: @main-blue;
+        }
+    }
+}
+
+.programs {
+    background-image: url('../images/programs.jpg');
+    .bg-image-add;
+    color: #FFF;
+    margin-top: 64px;
+    padding-bottom: 54px;
+    text-align: center;
+    h1 {
+        margin: 24px 0 40px 0;
+    }
+    &__program {
+        vertical-align: top;
+        height: 244px;
+        width: 244px;
+        background-image: url('../images/program-bg.png');
+        .bg-image-add;
+        display: inline-block;
+        margin: 0 10px 10px;
+        display: inline-table;
+        > .inner {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+.bottom-links {
+    border-bottom: @bottom-color;
+    padding: 60px 0 40px 0;
+    background-color: @bottom-bg;
+
+    .container {
+        position: relative;
+    }
+
+    ul li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    a {
+        color: #D6D6D6;
+        strong {
+            color: #FFF;
+        }
+        &:hover {
+            color: #337ab7;
+        }
+    }
+
+    a.scroll-to-top {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -48px;
+    }
+
+    &__mobile {
+        padding: 0 16px;
+        text-align: center;
+        a[data-toggle="collapse"] {
+            display: inline-block;
+            margin: 12px 0 !important;
+            text-transform: uppercase;
+        }
+        ul[role="menu"] {
+            margin: 8px;
+        }
+        .caret {
+            color: #FFF;
+        }
+    }
+}
+
+.footer {
+    border-top: 2px solid @bottom-color;
+    background-color: @bottom-bg;
+    color: #D6D6D6;
+    i.fa {
+        font-size: 32px;
+    }
+
+    .copyright {
+        line-height: 94px;
+    }
+
+    a {
+        display: inline-block;
+        text-align: center;
+        line-height: 94px;
+
+        &:link, &:visited {
+            color: @bottom-color;
+        }
+        &:hover {
+            color: #FFF;
+            background: @social-active-bg;
+        }
+    }
+
+    .created-by {
+        padding-top: 32px;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+}
+
+
+
+@media print and (max-width: 768px) {
+    * {
+        color: black !important;
+        background: white !important;
+    }
+
+    button, .btn, input {
+        display: none !important;
+    }
+}

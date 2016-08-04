@@ -1,0 +1,133 @@
+/* 1/5 parts */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+/* vertical navpanel */
+.content {
+    @media (min-width: 768px) {
+        .navbar-collapse {
+            height: auto;
+            border-top: 0;
+            box-shadow: none;
+            max-height: none;
+            padding-left:0;
+            padding-right:0;
+          }
+        .navbar-collapse.collapse {
+            display: block !important;
+            width: auto !important;
+            padding-bottom: 0;
+            overflow: visible !important;
+        }
+        .navbar-collapse.in {
+            overflow-x: visible;
+        }
+        .navbar {
+            max-width:300px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .navbar-nav,
+        .navbar-nav > li,
+        .navbar-left,
+        .navbar-right,
+        .navbar-header {
+            float:none !important;
+        }
+        .navbar-right .dropdown-menu {
+            left:0;
+            right:auto;
+        }
+        .navbar-collapse .navbar-nav.navbar-right:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// No border for bootstrap dropdown
+.dropdown-noborder {
+    border: 0 none !important;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.carousel-hide-arrows .right.carousel-control,
+.carousel-hide-arrows .left.carousel-control {
+    display: none;
+}
+
+.square-button {
+    font-size: 44px !important;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: @main-blue;
+    color: #FFF;
+    text-shadow: none !important;
+}
+
+.floating-button {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    color: #FFF;
+    font-weight: bold;
+    background: #4AB848;
+
+    .icon, .text {
+        display: inline-block;
+    }
+
+    .icon {
+        font-size: 20px;
+        background: #42A541;
+        padding: 16px;
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 16px;
+        text-transform: uppercase;
+    }
+}
+
+.width-100 {
+    width: 100%;
+}
